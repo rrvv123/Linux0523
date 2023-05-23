@@ -1,0 +1,249 @@
+root@polystudent-virtual-machine:~/바탕화면# cd
+root@polystudent-virtual-machine:~# apt-cache show mc
+Package: mc
+Status: deinstall ok config-files
+Priority: optional
+Section: utils
+Installed-Size: 1538
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3:4.8.28-1
+Provides: mcedit
+Depends: libc6 (>= 2.34), libext2fs2 (>= 1.37), libglib2.0-0 (>= 2.59.2), libgpm2 (>= 1.20.7), libslang2 (>= 2.2.4), libssh2-1 (>= 1.2.8), mc-data (= 3:4.8.28-1)
+Recommends: mailcap, perl, sensible-utils, unzip
+Suggests: arj, bzip2, catdvi | texlive-binaries, dbview, djvulibre-bin, epub-utils, file, genisoimage, gv, imagemagick, libaspell-dev, links | w3m | lynx, odt2txt, poppler-utils, python, python-boto, python-tz, unar, wimtools, xpdf | pdf-viewer, zip
+Conffiles:
+ /etc/mc/edit.indent.rc newconffile
+ /etc/mc/filehighlight.ini newconffile
+ /etc/mc/mc.default.keymap newconffile
+ /etc/mc/mc.emacs.keymap newconffile
+ /etc/mc/mc.ext newconffile
+ /etc/mc/mc.menu newconffile
+ /etc/mc/mcedit.menu newconffile
+ /etc/mc/sfs.ini newconffile
+Description-en: Midnight Commander - a powerful file manager
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+Description-md5: 252a5c5aeeb7425db45357d4ab8aa55f
+Original-Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Homepage: https://www.midnight-commander.org
+
+Package: mc
+Architecture: amd64
+Version: 3:4.8.19-1
+Priority: optional
+Section: universe/utils
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1452
+Provides: mcedit
+Depends: e2fslibs (>= 1.37), libc6 (>= 2.15), libglib2.0-0 (>= 2.35.9), libgpm2 (>= 1.20.4), libslang2 (>= 2.2.4), libssh2-1 (>= 1.2.8), mc-data (= 3:4.8.19-1)
+Recommends: mime-support, perl, unzip
+Suggests: arj, bzip2, catdvi | texlive-binaries, dbview, djvulibre-bin, file, genisoimage, gv, imagemagick, libaspell-dev, links | w3m | lynx, odt2txt, poppler-utils, python, python-boto, python-tz, xpdf | pdf-viewer, zip
+Filename: pool/universe/m/mc/mc_4.8.19-1_amd64.deb
+Size: 473768
+MD5sum: 042652517a66c5e8f17149e26326564a
+SHA1: 439660ea74c3c9fe0b6f448fb91b3b93a10cc0d4
+SHA256: 494fe386a93862c523b6c6bab766f21e77717bc6601cb7af59960e67c5162a72
+Homepage: https://www.midnight-commander.org
+Description-en: Midnight Commander - a powerful file manager
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+Description-md5: 252a5c5aeeb7425db45357d4ab8aa55f
+
+root@polystudent-virtual-machine:~# cd /root/다운로드
+root@polystudent-virtual-machine:~/다운로드# ls -l mc
+ls: 'mc'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+root@polystudent-virtual-machine:~/다운로드# ls -l mc*
+-rw-r--r-- 1 root root 473768  5월 16 11:14 mc_4.8.19-1_amd64.deb
+-rw-r--r-- 1 root root 540062  4월 30  2022 mc_4.8.28-1_amd64.deb
+root@polystudent-virtual-machine:~/다운로드# dpkg -i mc_4.8.
+dpkg: 오류: cannot access archive 'mc_4.8.': 그런 파일이나 디렉터리가 없습니다
+root@polystudent-virtual-machine:~/다운로드# dpkg -i mc_4.8.28-1_amd64.deb
+Selecting previously unselected package mc.
+(데이터베이스 읽는중 ...현재 205150개의 파일과 디렉터리가 설치되어 있습니다.)
+Preparing to unpack mc_4.8.28-1_amd64.deb ...
+Unpacking mc (3:4.8.28-1) ...
+dpkg: 종속성 문제로 mc의 구성이 차단되었습니다:
+ mc 패키지는 다음 패키지에 의존: libssh2-1 (>= 1.2.8): 하지만:
+  libssh2-1 패키지는 설치하지 않았습니다.
+ mc 패키지는 다음 패키지에 의존: mc-data (= 3:4.8.28-1): 하지만:
+  mc-data 패키지는 설치하지 않았습니다.
+
+dpkg: error processing package mc (--install):
+ 의존성 문제 - 설정하지 않고 남겨둠
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+처리하는데 오류가 발생했습니다:
+ mc
+root@polystudent-virtual-machine:~/다운로드# cd
+root@polystudent-virtual-machine:~# dpkg -l mc
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/고정(H)
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F)/일부설치(H)/트리거대기(W)/
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대문자=불량)
+||/ 이름           버전         Architecture 설명
++++-==============-============-============-==================================>
+iU  mc             3:4.8.28-1   amd64        Midnight Commander - a powerful fi>
+
+[1]+  멈춤                  dpkg -l mc
+root@polystudent-virtual-machine:~# ^C
+root@polystudent-virtual-machine:~# ^C
+root@polystudent-virtual-machine:~# apt-cache depends mc
+mc
+  의존: libc6
+  의존: libext2fs2
+  의존: libglib2.0-0
+  의존: libgpm2
+  의존: libslang2
+  의존: libssh2-1
+  의존: mc-data
+  추천: mailcap
+  추천: perl
+  추천: sensible-utils
+  추천: unzip
+    unzip:i386
+  제안: arj
+  제안: bzip2
+    bzip2:i386
+ |제안: catdvi
+  제안: texlive-binaries
+    texlive-binaries:i386
+  제안: dbview
+  제안: djvulibre-bin
+  제안: epub-utils
+  제안: file
+    file:i386
+  제안: genisoimage
+  제안: gv
+  제안: imagemagick
+    graphicsmagick-imagemagick-compat
+    imagemagick:i386
+    imagemagick-6.q16:i386
+    imagemagick-6.q16
+  제안: libaspell-dev
+ |제안: links
+    links:i386
+ |제안: w3m
+    w3m:i386
+  제안: lynx
+    lynx:i386
+  제안: odt2txt
+  제안: poppler-utils
+    poppler-utils:i386
+  제안: python
+  제안: python-boto
+  제안: python-tz
+  제안: unar
+  제안: wimtools
+ |제안: xpdf
+  제안: <pdf-viewer>
+    okular
+    atril
+    evince
+    gv
+    mupdf
+    viewpdf.app
+    xpdf
+    zathura-pdf-poppler
+  제안: zip
+    zip:i386
+root@polystudent-virtual-machine:~# apt-get install mc
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+패키지 mc는 이미 최신 버전입니다 (3:4.8.28-1).
+이 상황을 바로잡으려면 'apt --fix-broken install'을 실행해야 할 수도 있습니다.
+다음 패키지의 의존성이 맞지 않습니다:
+ mc : 의존: libssh2-1 (>= 1.2.8) 하지만 %s 패키지를 설치하지 않을 것입니다
+      의존: mc-data (= 3:4.8.28-1) 하지만 %s 패키지를 설치하지 않을 것입니다
+E: 의존성이 맞지 않습니다. 패키지 없이 'apt --fix-broken install'을 시도해 보십시오 (아니면 해결 방법을 지정하십시오).
+root@polystudent-virtual-machine:~# apt --fix-broken install
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+의존성을 바로잡는 중입니다... 완료
+다음 패키지를 지울 것입니다:
+  mc
+0개 업그레이드, 0개 새로 설치, 1개 제거 및 0개 업그레이드 안 함.
+1개를 완전히 설치하지 못했거나 지움.
+이 작업 후 1,575 k바이트의 디스크 공간이 비워집니다.
+계속 하시겠습니까? [Y/n] y
+(데이터베이스 읽는중 ...현재 205243개의 파일과 디렉터리가 설치되어 있습니다.)
+mc (3:4.8.28-1)를 제거합니다...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+root@polystudent-virtual-machine:~# mc
+명령어 'mc' 을(를) 찾을 수 없습니다. 그러나 다음을 통해 설치할 수 있습니다:
+apt install mc
+root@polystudent-virtual-machine:~# mc
+명령어 'mc' 을(를) 찾을 수 없습니다. 그러나 다음을 통해 설치할 수 있습니다:
+apt install mc
+root@polystudent-virtual-machine:~# apt-get install mc
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+다음의 추가 패키지가 설치될 것입니다 :
+  libssh2-1 mc-data
+제안하는 패키지:
+  arj catdvi | texlive-binaries dbview djvulibre-bin gv imagemagick
+  libaspell-dev links | w3m | lynx odt2txt python python-boto python-tz
+다음 새 패키지를 설치할 것입니다:
+  libssh2-1 mc mc-data
+0개 업그레이드, 3개 새로 설치, 0개 제거 및 0개 업그레이드 안 함.
+1,785 k바이트 아카이브를 받아야 합니다.
+이 작업 후 7,541 k바이트의 디스크 공간을 더 사용하게 됩니다.
+계속 하시겠습니까? [Y/n] y
+받기:1 http://mirror.kakao.com/ubuntu bionic/universe amd64 libssh2-1 amd64 1.8.0-1 [73.2 kB]
+받기:2 http://mirror.kakao.com/ubuntu bionic/universe amd64 mc-data all 3:4.8.19-1 [1,238 kB]
+받기:3 http://mirror.kakao.com/ubuntu bionic/universe amd64 mc amd64 3:4.8.19-1 [474 kB]
+내려받기 1,785 k바이트, 소요시간 1초 (3,472 k바이트/초)
+Selecting previously unselected package libssh2-1:amd64.
+(데이터베이스 읽는중 ...현재 205150개의 파일과 디렉터리가 설치되어 있습니다.)
+Preparing to unpack .../libssh2-1_1.8.0-1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.8.0-1) ...
+Selecting previously unselected package mc-data.
+Preparing to unpack .../mc-data_3%3a4.8.19-1_all.deb ...
+Unpacking mc-data (3:4.8.19-1) ...
+Selecting previously unselected package mc.
+Preparing to unpack .../mc_3%3a4.8.19-1_amd64.deb ...
+Unpacking mc (3:4.8.19-1) ...
+mc-data (3:4.8.19-1) 설정하는 중입니다 ...
+libssh2-1:amd64 (1.8.0-1) 설정하는 중입니다 ...
+mc (3:4.8.19-1) 설정하는 중입니다 ...
+update-alternatives: using /usr/bin/mcview to provide /usr/bin/view (view) in auto mode
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+root@polystudent-virtual-machine:~# mc
+
+root@polystudent-virtual-machine:~# eit
+명령어 'eit' 을(를) 찾을 수 없습니다. 다음 명령어로 시도하시겠습니까:
+  deb gitgit의 명령어 ' (1:2.34.1-1ubuntu1.8)'
+  deb vitvit의 명령어 ' (2.1.0-2)'
+  deb entent의 명령어 ' (1.2debian-3)'
+  deb editmailcap의 명령어 ' (3.70+nmu1ubuntu1)'
+  deb witwit의 명령어 ' (3.01a-4)'
+  deb eetlibeet-bin의 명령어 ' (1.26.2-1)'
+  deb eidid-utils의 명령어 ' (4.6.28-20200521ss15dab)'
+Try: apt install <deb name>
+
+root@polystudent-virtual-machine:~# nano /etc/apt/sources.list
+root@polystudent-virtual-machine:~# nano /etc/apt/sources.list
+root@polystudent-virtual-machine:~# nano /etc/apt/sources.list
+root@polystudent-virtual-machine:~# nano /etc/apt/sources.list
